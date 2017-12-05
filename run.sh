@@ -1,5 +1,5 @@
 #!/bin/bash -l
-passwd = $1
+passwd=$1
 echo "password: ${passwd}"
 yes|sudo apt-get install shadowsocks
 sudo bash -c "echo \
