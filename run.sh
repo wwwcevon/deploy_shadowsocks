@@ -2,6 +2,7 @@
 passwd=$1
 echo "password: ${passwd}"
 yes|sudo apt-get install shadowsocks
+sudo bash -c "echo \"127.0.0.1 `hostname`\" >> /etc/hosts"
 sudo bash -c "echo \
 '{
     \"server\": \"0.0.0.0\",
