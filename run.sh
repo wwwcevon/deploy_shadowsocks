@@ -14,4 +14,4 @@ sudo bash -c "echo \
     \"workers\": 2
 }' > /etc/shadowsocks/config.json
 "
-sudo service shadowsocks restart
+nohup ssserver -c /etc/shadowsocks/config.json & 2>&1 > /dev/null
