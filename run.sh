@@ -5,7 +5,7 @@ yes|sudo apt-get install shadowsocks
 sudo bash -c "echo \
 '{
     \"server\": \"0.0.0.0\",
-    \"server_port\": 22,
+    \"server_port\": 80,
     \"password\": \"${passwd}\",
     \"timeout\": 360,
     \"method\": \"aes-256-cfb\",
