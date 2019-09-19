@@ -1,6 +1,6 @@
 #!/bin/bash -l
 passwd=$1
-if [ -z "$passwd"];
+if [ -z "$passwd" ];
 then
 echo "need password"
 echo "bash run.sh {your password}"
