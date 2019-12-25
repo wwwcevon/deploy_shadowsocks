@@ -7,7 +7,7 @@ echo "bash run.sh {your password}"
 exit
 fi
 echo "password: ${passwd}"
-if [ apt-cache pkgnames | grep -q 'shadowsocks' ]
+if [ `apt-cache pkgnames | grep -q 'shadowsocks'` ]
 then
 echo "shadowsocks has been installed"
 else
